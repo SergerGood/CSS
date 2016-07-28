@@ -1,0 +1,7 @@
+﻿.rounded-corners(@size: 5px) when (isnumber(@size)){
+    border-radius: @size;
+}
+
+.rounded-corners(@size: 5px) when (ispercentage(@size)){
+    border-radius: @size;
+}
