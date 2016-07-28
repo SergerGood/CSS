@@ -68,8 +68,19 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\My.css">
+      <DependentUpon>My.less</DependentUpon>
+    </Content>
+    <Content Include="css\My.min.css">
+      <DependentUpon>My.css</DependentUpon>
+    </Content>
     <Content Include="Form.html" />
-    <Content Include="css\init.css" />
+    <Content Include="css\colors.less" />
+    <None Include="css\init.less" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="css\My.less" />
     <Content Include="js\less-1.2.1.min.js" />
     <Content Include="Web.config">
