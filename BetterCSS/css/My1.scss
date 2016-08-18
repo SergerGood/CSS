@@ -1,4 +1,5 @@
 ﻿@import "init.css";
+@import "mixins";
 
 $main-color: black;
 $baseFontSize: 14px;
@@ -42,6 +43,7 @@ h3 {
     margin-right: auto;
     background: #FFF;
     padding: 5px;
+    @include rounded-corners(5px);
     color: $main-color;
 }
 
