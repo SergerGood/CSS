@@ -1,25 +1,35 @@
 ﻿@import "init.css";
 
+$main-color: black;
+$baseFontSize: 14px;
+$rootPath: "http://localhost:8005/";
+$baseClassName: "col";
+
+.#{$baseClassName}1 {
+    font-size: $baseFontSize;
+}
+
 /* Basics */
 html {
     font-family: 'Open Sans', verdana, helvetica, sans-serif;
-    font-size: 18px;
+    font-size: $baseFontSize;
 }
 
 body {
-    background: #008000;
+    background: lighten($main-color, 25%);
+    background-image: url("#{$rootPath}images/back.jpg");
 }
 
 h1 {
-    font-size: 18px + 10px;
+    font-size: $baseFontSize + 10;
 }
 
 h2 {
-    font-size: 18px + 4px;
+    font-size: $baseFontSize + 4;
 }
 
 h3 {
-    font-size: 18px + 2px;
+    font-size: $baseFontSize + 2;
 }
 
 /* Layout */
@@ -30,7 +40,7 @@ h3 {
     margin-right: auto;
     background: #FFF;
     padding: 5px;
-    color: darken(#008000, 10%);
+    color: $main-color;
 }
 
 /* Sections */
@@ -41,7 +51,7 @@ header h1 {
 }
 
 nav {
-    font-size: 14px;
+    font-size: $baseFontSize;
     font-weight: bold;
     float: right;
 }
