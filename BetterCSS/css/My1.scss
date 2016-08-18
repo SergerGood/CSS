@@ -11,8 +11,10 @@ $baseClassName: "col";
 
 /* Basics */
 html {
-    font-family: 'Open Sans', verdana, helvetica, sans-serif;
-    font-size: $baseFontSize;
+    font: {
+        family: 'Open Sans', verdana, helvetica, sans-serif;
+        size: $baseFontSize;
+    }
 }
 
 body {
@@ -77,14 +79,15 @@ footer {
     font-size: 9px;
     text-align: center;
     color: Blue;
+
+    nav {
+        float: none;
+        display: inline-block;
+        font-size: 9px;
+        vertical-align: middle;
+    }
 }
 
-footer nav {
-    float: none;
-    display: inline-block;
-    font-size: 9px;
-    vertical-align: middle;
-}
 
 /* Forms */
 #contact-form {
